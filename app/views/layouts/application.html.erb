@@ -27,9 +27,15 @@
 	
 <div class="collapse navbar-collapse navbar-inverse collapse in" id="bs-example-navbar-collapse-1"  style="">
 		<ul class="nav navbar-nav my-nav-styles">
-		<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
+		<!-- <li class="active"> -->
+    <%= link_to "Home", static_pages_index_path %>
+    <a href="http://localhost:3000/"></a>
+    <%= link_to "About", static_pages_about_path %>
+			<a href="http://localhost:3000/static_pages/about"></a>
+      <%= link_to "Contact", static_pages_contact_path %>
+			<a href="http://localhost:3000/static_pages/contact"></a>
+      <%= link_to "Products", @product %>
+      <a href="http://localhost:3000/products"></a>
 		</ul>
 	</div>
 	</div>
