@@ -95,16 +95,29 @@ a {
 	font-weight:bold;
 	font-size: 15px;
 }
+.navbar-form, navbar-right, input{
+	    color: black;
+}
+.navbar-form, navbar-right, {
+	    color: #d9edf7
+}
+.navbar-form, navbar-right{
+	margin-top: 12px;
 
-.email-address{
-	text-align:center;
-	
 }
 
 .form-control{
-	height: 25px;
+	margin: 0 auto;
+	width: 20%;
 }
-.btn {
-	padding: 0px 12px;
+.form-control{
+	display:inline-block;
+}
+.form-group{
+	text-align:center;
 
+}
+
+.form-group, input{
+	height: 30px;
 }

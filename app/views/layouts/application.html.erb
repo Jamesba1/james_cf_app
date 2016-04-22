@@ -36,7 +36,7 @@
 			<a href="http://localhost:3000/static_pages/contact"></a>
       <%= link_to "Products", @product %>
       <a href="http://localhost:3000/products"></a>
-      <%= form_tag("/products", method: "get") do %>
+      <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
@@ -55,9 +55,9 @@
 
 </div>
 
-<div class= "email-address">
+<div class= "form-group">
 <P>Join our mailing list</P>
-<%= email_field(:user, :address, placeholder: "Enter email") %>
+<%= email_field(:user, :address, placeholder: "Enter email", class: "form-control") %>
 <%= submit_tag("Send") %>
 </div>
 
