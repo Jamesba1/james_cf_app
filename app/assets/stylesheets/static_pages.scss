@@ -22,8 +22,8 @@ p {
 font-weight:bold;
 text-align:center;
 }
-body {
-	padding-top:50px;
+ body {
+ padding-top:50px;
 }
 
 .img-responsive {
@@ -41,7 +41,15 @@ body {
  .navbar a {
  	text-transform: uppercase;
 	font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
+	color: #d9edf7;
 }
+
+a {
+	padding-left: 50px;
+
+}
+
+
 	
 	// position: fixed;
 	// width: 100%;
@@ -86,4 +94,17 @@ body {
 .carousel-caption{
 	font-weight:bold;
 	font-size: 15px;
+}
+
+.email-address{
+	text-align:center;
+	
+}
+
+.form-control{
+	height: 25px;
+}
+.btn {
+	padding: 0px 12px;
+
 }
