@@ -13,4 +13,9 @@ def thank_you
   UserMailer.contact_form(@email, @name, @message).deliver_now
 end
 
+def newsletter
+	@email = params[:email]
+	UserMailer.newsletter(@email).deliver_now
+	end
+
 end
