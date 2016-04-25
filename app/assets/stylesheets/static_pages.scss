@@ -4,6 +4,8 @@ html {
 
 body {
 	height: 100%;
+	background-color: #EEEEEE;
+
 	}
 
 h1 {
@@ -47,6 +49,7 @@ text-align:center;
 
 a {
 	padding-left: 50px;
+	padding-top: 100px;
 
 
 }
@@ -86,7 +89,8 @@ a {
 	    color: black;
 }
 .navbar-form, navbar-right, {
-	    color: #d9edf7
+	    color: #d9edf7;
+	    padding-left: 100px;
 }
 .navbar-form, navbar-right{
 	margin-top: 12px;
@@ -108,4 +112,6 @@ a {
 .form-group, input{
 	height: 30px;
 }
+
+
 
