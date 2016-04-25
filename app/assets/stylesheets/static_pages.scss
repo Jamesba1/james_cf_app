@@ -42,31 +42,22 @@ text-align:center;
  	text-transform: uppercase;
 	font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
 	color: #d9edf7;
+
 }
 
 a {
 	padding-left: 50px;
 
+
 }
 
+.navbar-collapse{
+	text-align: center;
+}
 
-	
-	// position: fixed;
-	// width: 100%;
-	// top: 0;
-	// height: 2px;
-	// }
-
-	
-// // nav ul li{
-// 	display: inline-block;	
-// 	padding: 15px 160px 20px;
-// 	color: white;
-// 	text-transform: uppercase;
-// 	font-family: Oswald, Futura, Helvetica, Arial, sans-serif;
-
-
-// }
+.my-nav-styles{
+	display: inline-block
+}
 
 .site-footer {
 	float:right;
@@ -83,14 +74,10 @@ a {
    
    
 }
-.my-nav-styles {
-	width: 100%;
-}
-
-.my-nav-styles>li {
-	width: 33%;
-	text-align: center;
-}
+// .my-nav-styles>li {
+	// width: 33%;
+	// text-align: center;
+// }
 .carousel-caption{
 	font-weight:bold;
 	font-size: 15px;

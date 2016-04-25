@@ -29,22 +29,30 @@
 <div class="collapse navbar-collapse navbar-inverse collapse in" id="bs-example-navbar-collapse-1"  style="", aria-expanded="false">
 		<ul class="nav navbar-nav my-nav-styles">
 		<!-- <li class="active"> -->
-    <%= link_to "Home", static_pages_index_path %>
-    <a href="http://localhost:3000/"></a>
-    <%= link_to "About", static_pages_about_path %>
-			<a href="http://localhost:3000/static_pages/about"></a>
+    <li>
+    <%= link_to "Home", static_pages_index_path %>    
+    <%= link_to "About", static_pages_about_path %>		
       <%= link_to "Contact", static_pages_contact_path %>
-			<a href="http://localhost:3000/static_pages/contact"></a>
-      <%= link_to "Products", @product %>
-      <a href="http://localhost:3000/products"></a>
+      <%= link_to "Products",products_path %>
+
+     
       <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
-<% end %>
-
-            
+    <% end %>
+      </li>            
 		</ul>
+
+  <ul class="nav pull-right">
+  <li>
+  <% if user_signed_in? %>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+  <% else %>
+    <%= link_to('Login', new_user_session_path) %>
+  <% end %>
+  </li>
+</ul>
 
 
 
@@ -52,15 +60,19 @@
 	</div>
   </nav>
 
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+
 <%= yield %>
 
 </div>
 
-<div class= "form-group">
-<P>Join our mailing list</P>
-<%= email_field(:user, :address, placeholder: "Enter email", class: "form-control") %>
-<%= submit_tag("Send") %>
-</div>
+<!-- <div class= "form-group"> -->
+<!-- <P>Join our mailing list</P> -->
+<!-- <= email_field(:user, :address, placeholder: "Enter email", class: "form-control") %> -->
+<!-- <= submit_tag("Send") %> -->
+<!-- </div> -->
 
 <footer class="site-footer"> 
 

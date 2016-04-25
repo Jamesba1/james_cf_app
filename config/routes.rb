@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :users
   get 'static_pages/thank_you'
 
   resources :products
