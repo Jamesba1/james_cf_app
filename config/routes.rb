@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :users
   get 'static_pages/thank_you'
 
-  resources :products
+ 
   get 'static_pages/about'
 
   get 'static_pages/contact'
@@ -73,4 +73,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :orders, only: [:index, :show, :create, :destroy]
+  resources :products do
+  resources :comments
+end
 end
