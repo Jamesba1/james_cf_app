@@ -10,6 +10,7 @@ class OrdersController < ApplicationController
 	end
 
 	def create
+		@order = Order.new (params[:product_id, :user_id, :total])
 	end
 
 	def destroy
