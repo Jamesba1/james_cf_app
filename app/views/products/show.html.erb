@@ -13,7 +13,7 @@
 <p class="thumbnail">
   <!-- <strong>Image url:</strong> -->
   <!-- <= @product.image_url %> -->
-  <%= image_tag(@product.image_url, class: "img-responsive") %>
+  <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data: {img_zoom:"@product.image_url"}) %>
 </p>
 
 <p>
