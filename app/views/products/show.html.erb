@@ -34,6 +34,7 @@
 
 
 <%= render 'new_comment'%>
+<%= render 'comments'%>
 
 <%= form_tag "/payments/create" do %>
 <%= hidden_field_tag @product.id, :product_id %>
