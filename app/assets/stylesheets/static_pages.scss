@@ -81,7 +81,7 @@ text-align:center;
 	width:100%;
 	text-align: right;
     padding-top: 15px;
-    position:absolute;
+    position:fixed;
     padding-right: 50px;
     bottom: 0;
   
@@ -143,4 +143,8 @@ text-align:center;
 }
 .stripe-button{
 	text-align: center;
+}
+
+.img-zoom {
+   width: 500px;
 }

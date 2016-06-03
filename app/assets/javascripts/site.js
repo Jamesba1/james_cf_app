@@ -10,7 +10,7 @@ $(document).on('ready page:load', function(){
 
     });
     $('.img-zoom').elevateZoom();
-    $('.product-reviews').prepend("<%= j render @comments %>");
+    
 });
 
 

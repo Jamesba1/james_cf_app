@@ -4,5 +4,7 @@ $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
       readOnly: true,
       score: function() {
         return $(this).attr('data-score');
+         $('.product-reviews').prepend("<%= j render @comment %>");
       }
+
     });
