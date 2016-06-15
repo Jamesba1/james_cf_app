@@ -36,11 +36,11 @@
 <%= render 'new_comment'%>
 <%= render 'comments'%>
 
-<%= form_tag "/payments/create" do %>
+<%= form_tag  "/payments/create", class: "stripe" do %>
 <%= hidden_field_tag @product.id, :product_id %>
-  <%= render partial: "stripe_checkout_button" %>
- 
-<br>
+  <%=  render partial: "stripe_checkout_button" %>
+ <br/><br/>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 <% end %>

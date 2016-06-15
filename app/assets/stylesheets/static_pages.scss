@@ -90,7 +90,7 @@ text-align:center;
 }
 
 .pagination {
-	padding-left: 500px;
+	padding-left: 560px;
 }
 // .my-nav-styles>li {
 	// width: 33%;
@@ -116,12 +116,14 @@ text-align:center;
 	margin: 0 auto;
 	width: 40%;
 	text-align: center;
+
 }
 // .form-control{
 	// display:inline-block;
 // }
 .form-group{
 	text-align:center;
+
 
 }
 
@@ -145,10 +147,18 @@ text-align:center;
 .rating{
 	text-align: center;
 }
-.stripe-button{
+.stripe{
 	text-align: center;
+	margin-bottom: 100px;
+
+
 }
 
 .img-zoom {
    width: 500px;
+}
+
+a :hover {
+	color: none;
+	background-color: none;
 }

@@ -5,6 +5,14 @@ FactoryGirl.define do
     password "123456"   
     first_name "James"
     last_name "Example" 
-    admin true    
+    admin true  
+end
+  factory :user do
+    email
+    password "123456"   
+    first_name "James"
+    last_name "Example" 
+        
+
   end
 end
