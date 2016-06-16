@@ -37,7 +37,7 @@
 <%= render 'comments'%>
 
 <%= form_tag  "/payments/create", class: "stripe" do %>
-<%= hidden_field_tag @product.id, :product_id %>
+<%= hidden_field_tag :product_id, @product.id  %>
   <%=  render partial: "stripe_checkout_button" %>
  <br/><br/>
 
